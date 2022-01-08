@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(102,226,203,1) 0%, rgba(102,226,203,1) 0%, rgba(65,137,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-app {
+    background: #fff;
+    box-shadow: 0 0 5px rgb(128, 128, 128);
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+#app-heading {
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.new-todo {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#todo-text {
+    width: 50ch;
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 4px;
+    outline: none;
+}
+
+#todo-text::placeholder {
+    font-size: 1rem;
+}
+
+.new-todo button {
+    border:none;
+    background: rgb(155, 56, 255);
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+.new-todo button:hover {
+    background: rgb(128, 0, 255);
+}
+
+.new-todo button img {
+    width: 50%;
+}
+
+#todo-list {
+    min-height: 10rem;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer button {
+    border:none;
+    background: rgb(155, 56, 255);
+    border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#footer button:hover {
+    background: rgb(128, 0, 255);
+}
+
+.todo {
+    background-color: rgb(242, 242, 242);
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.todo-text {
+    padding: 10px;
+}
+
+.todo:hover button {
+    right: 0;
+}
+
+
+.todo button {
+    background-color: #E55244;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 3rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -3rem;
+    transition: all 0.4s ease;
+}
+
+.todo button:hover {
+    background-color: #c4362a;
+}
+
+.todo button img {
+    height: 1.2rem;
+}
+
+.done {
+    text-decoration: line-through;
+    color: grey;
+}
